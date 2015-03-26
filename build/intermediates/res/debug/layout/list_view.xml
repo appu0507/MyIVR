@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center|fill"
+    android:gravity="fill_horizontal"
+    android:orientation="vertical" >
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:showDividers="middle" >
+
+        <Button
+            android:id="@+id/backBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Back" />
+
+    </LinearLayout>
+    
+	<EditText android:id="@+id/inputSearch"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:hint="Search products.."
+        android:inputType="textVisiblePassword"/>
+    <ListView
+        android:id="@android:id/list"
+        android:layout_width="fill_parent"
+        android:layout_height="454dp"
+        android:clickable="false"
+        android:drawSelectorOnTop="false"
+        android:fastScrollAlwaysVisible="true"
+        android:fastScrollEnabled="true"
+        android:fitsSystemWindows="true"
+        android:smoothScrollbar="true"
+        android:textFilterEnabled="true" >
+    </ListView>
+
+</LinearLayout>
+
+<!-- From: file:/D:/Android_Programming/IVRApp%20(1)/IVRApp/res/layout/list_view.xml -->

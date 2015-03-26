@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/RelativeLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center|fill"
+    android:gravity="fill_horizontal"
+    android:orientation="vertical" >
+
+    <Button
+        android:id="@+id/backBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/backbutton1" />
+
+    <!--
+          <EditText
+         android:id="@+id/inputSearch"
+         android:layout_width="fill_parent"
+         android:layout_height="wrap_content"
+         android:hint="Search"
+         android:inputType="textVisiblePassword" /> 
+         -->
+
+    <ListView
+        android:id="@android:id/list"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/backBtn"
+        android:clickable="false"
+        android:drawSelectorOnTop="false"
+        android:fastScrollAlwaysVisible="true"
+        android:fastScrollEnabled="true"
+        android:fitsSystemWindows="true"
+        android:smoothScrollbar="true"
+        android:textFilterEnabled="true" >
+    </ListView>
+
+    <Button
+        android:id="@+id/home"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/home_icon" />
+
+</RelativeLayout>

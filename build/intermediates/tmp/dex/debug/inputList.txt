@@ -1,0 +1,2 @@
+D:\Android_Programming\IVRApp (1)\IVRApp\build\intermediates\classes\debug
+D:\Android_Programming\IVRApp (1)\IVRApp\build\intermediates\pre-dexed\debug\android-support-v4-935800440b81d49486e71c6f8e4d8baf4777f045.jar

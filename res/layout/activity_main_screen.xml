@@ -1,0 +1,42 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/RelativeLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#3f374f" >
+
+    <!-- Sample Dashboard screen with Two buttons -->
+    <!-- Button to view all products screen -->
+
+
+    <!-- Button to create a new product screen -->
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="200dp"
+        android:layout_height="150dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="113dp"
+        android:src="@drawable/title_image" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/imageView1"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/arrow_up" />
+
+    <Button
+        android:id="@+id/btnStart"
+        style="@style/AppBaseTheme"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_above="@+id/imageView1"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/launch_1"
+        android:includeFontPadding="true"
+        android:textSize="@android:dimen/app_icon_size" />
+
+</RelativeLayout>

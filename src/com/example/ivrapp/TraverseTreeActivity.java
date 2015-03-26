@@ -150,7 +150,7 @@ public class TraverseTreeActivity extends ListActivity {
     		HttpClient httpClient = new DefaultHttpClient();
     		 
     		// Creating HTTP Post
-    		HttpGet request = new HttpGet("http://www.ivrcrasher.com/get_nodes_children.php?node_id=" + params[0]);
+    		HttpGet request = new HttpGet("http://162.144.12.192/get_nodes_children.php?node_id=" + params[0]);
     		//Sending Data to the server
     		//HttpClient httpclient1 = new DefaultHttpClient();
             //HttpPost httppost1 = new HttpPost("http://www.ivrcrasher.com/receive_data.php");

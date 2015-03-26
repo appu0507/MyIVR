@@ -150,7 +150,7 @@ public class TraverseTreeActivity extends ListActivity {
     		HttpClient httpClient = new DefaultHttpClient();
     		 
     		// Creating HTTP Post
-    		HttpGet request = new HttpGet("http://www.ivrcrasher.com/get_nodes_children.php?node_id=" + params[0]);
+    		HttpGet request = new HttpGet("http://ivrcrasher.com/get_nodes_children.php?node_id=" + params[0]);
     		//Sending Data to the server
     		//HttpClient httpclient1 = new DefaultHttpClient();
             //HttpPost httppost1 = new HttpPost("http://www.ivrcrasher.com/receive_data.php");
@@ -222,7 +222,7 @@ public class TraverseTreeActivity extends ListActivity {
 
 	    		    	        @Override
 	    		    	        public int compare(HashMap<String, String> lhs,
-	    		    	                HashMap<String, String> rhs) {
+	    		    	            HashMap<String, String> rhs) {
 	    		    	        	String firstValue = lhs.get(TAG_NAME);
 	    		    	            String secondValue = rhs.get(TAG_NAME);
 	    		    	            return firstValue.compareTo(secondValue);
@@ -354,20 +354,18 @@ public class TraverseTreeActivity extends ListActivity {
                 	{           	
                 		
                 		
-                					finalStr = phoneStr + specialStr;
-                				//	Toast.makeText(getApplicationContext(), phoneStr + "" + specialStr, Toast.LENGTH_SHORT).show();
-                					
-                					
-                					finish();
-                					//Sending Data to Server////////////////////////////
-                					// HttpClient
+                	finalStr = phoneStr + specialStr;
+                	//	Toast.makeText(getApplicationContext(), phoneStr + "" + specialStr, Toast.LENGTH_SHORT).show();
+                				
+                				
+                	finish();
                 					
 /////////////////////////////////////////////////////////////////////////////////////////////////////
-                		            Uri number = Uri.parse("tel:"+finalStr);
-               					
-                					Intent dial = new Intent(android.content.Intent.ACTION_CALL,number);
+                	Uri number = Uri.parse("tel:"+finalStr);
+               				
+                	Intent dial = new Intent(android.content.Intent.ACTION_CALL,number);
                 				    
-                					startActivity(dial);
+                	startActivity(dial);
                 				    
                 	}
                 	Log.d( "tv",  node_id + " " + name  );
